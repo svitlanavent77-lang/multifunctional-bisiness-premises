@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Monikäyttöinen toimitila</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <div class="overlay"></div>
+
+      <!-- Language Switch -->
+
+      <div class="language-switch">
+        <button id="fi-button">FI</button>
+
+        <button id="en-button">EN</button>
+      </div>
+
+      <!-- Hero Content -->
+
+      <div class="hero-content">
+        <h1 id="title">Monikäyttöinen toimitila</h1>
+
+        <p id="subtitle">Laadukas toimitila lähellä Turkua</p>
+
+        <a href="mailto:svitlana.vent77@email.com" class="contact-button">
+          Ota yhteyttä
+        </a>
+      </div>
+    </header>
+    <!-- ABOUT SECTION -->
+    <!-- ABOUT SECTION -->
+
+    <section class="about">
+      <div class="about-container">
+        <p class="section-small">TIETOA KOHTEESTA</p>
+
+        <div class="gold-line"></div>
+
+        <div class="about-main-text">
+          <p>
+            Monikäyttöinen toimitila sijaitsee rauhallisessa ympäristössä
+            Nousiaisissa osoitteessa
+            <strong>Urhontie 16, 21270 Nousiainen</strong>.
+          </p>
+
+          <p>
+            Kohde tarjoaa laadukkaat ja monikäyttöiset tilat yrityskäyttöön.
+            Tila soveltuu erinomaisesti toimistoksi, varastoksi, työtilaksi,
+            showroomiksi tai yrityksen tukikohdaksi.
+          </p>
+
+          <p>
+            Kokonaisuus on noin <strong>153 m²</strong>, johon sisältyy suuri
+            noin <strong>56 m²</strong> autotalli, oma pysäköintialue sekä
+            toimivat sisätilat kahdessa kerroksessa.
+          </p>
+
+          <p>
+            Tilassa on keittiö, suihku, wc, lattialämmitys, takka, terassi sekä
+            suuri parveke.
+          </p>
+
+          <p>
+            Rauhallinen sijainti luonnon ympäröimänä tarjoaa viihtyisän
+            työympäristön sekä hyvät yhteydet Turun ja Raision suuntaan.
+          </p>
+
+          <p>
+            Kohde sopii erityisesti pienille ja keskisuurille yrityksille, jotka
+            arvostavat toimivuutta, rauhallista sijaintia ja edustavaa
+            ympäristöä.
+          </p>
+        </div>
+
+        <div class="icons-banner">
+          <img src="images/icons-banner.png" alt="Features" />
+        </div>
+      </div>
+    </section>
+    <!-- FEATURES SECTION -->
+
+    <!-- GALLERY SECTION -->
+
+    <section class="gallery">
+      <h2>Galleria</h2>
+
+      <div class="gallery-grid">
+        <img src="images/gallery1.jpg" alt="" />
+        <img src="images/gallery2.jpg" alt="" />
+        <img src="images/gallery3.jpg" alt="" />
+        <img src="images/gallery4.jpg" alt="" />
+        <img src="images/gallery5.jpg" alt="" />
+        <img src="images/gallery6.jpg" alt="" />
+        <img src="images/gallery8.jpg" alt="" />
+        <img src="images/gallery9.jpg" alt="" />
+        <img src="images/gallery10.jpg" alt="" />
+        <img src="images/gallery11.jpg" alt="" />
+        <img src="images/gallery12.jpg" alt="" />
+        <img src="images/gallery13.jpg" alt="" />
+        <img src="images/gallery14.jpg" alt="" />
+        <img src="images/gallery15.jpg" alt="" />
+        <img src="images/gallery16.jpg" alt="" />
+        <img src="images/gallery17.jpg" alt="" />
+        <img src="images/gallery18.jpg" alt="" />
+        <img src="images/gallery19.jpg" alt="" />
+        <img src="images/gallery20.jpg" alt="" />
+        <img src="images/gallery21.jpg" alt="" />
+        <img src="images/gallery22.jpg" alt="" />
+        <img src="images/gallery23.jpg" alt="" />
+        <img src="images/gallery24.jpg" alt="" />
+        <img src="images/gallery25.jpg" alt="" />
+        <img src="images/gallery26.jpg" alt="" />
+        <img src="images/gallery27.jpg" alt="" />
+        <img src="images/gallery28.jpg" alt="" />
+        <img src="images/gallery29.jpg" alt="" />
+        <img src="images/gallery30.jpg" alt="" />
+        <img src="images/gallery31.jpg" alt="" />
+        <img src="images/gallery32.jpg" alt="" />
+        <img src="images/gallery33.jpg" alt="" />
+        <img src="images/gallery34.png" alt="" />
+        <img src="images/gallery35.png" alt="" />
+      </div>
+    </section>
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox" id="lightbox">
+      <span class="close-btn" id="close-btn"> × </span>
+
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+
+    <script>
+      // Finnish Text
+
+      const finnish = {
+        title: "Monikäyttöinen toimitila",
+
+        subtitle: "Laadukas toimitila lähellä Turkua",
+
+        contact: "Ota yhteyttä",
+      };
+
+      // English Text
+
+      const english = {
+        title: "Multifunctional Business Premises",
+
+        subtitle: "Premium business premises near Turku",
+
+        contact: "Contact",
+      };
+
+      // Buttons
+
+      const fiButton = document.getElementById("fi-button");
+
+      const enButton = document.getElementById("en-button");
+
+      // Text Elements
+
+      const title = document.getElementById("title");
+
+      const subtitle = document.getElementById("subtitle");
+
+      const contactText = document.getElementById("contact-text");
+
+      // Finnish Language
+
+      fiButton.addEventListener("click", () => {
+        title.textContent = finnish.title;
+
+        subtitle.textContent = finnish.subtitle;
+
+        contactText.textContent = finnish.contact;
+      });
+
+      // English Language
+
+      enButton.addEventListener("click", () => {
+        title.textContent = english.title;
+
+        subtitle.textContent = english.subtitle;
+
+        contactText.textContent = english.contact;
+      });
+      // LIGHTBOX
+
+      const galleryImages = document.querySelectorAll(".gallery-grid img");
+
+      const lightbox = document.getElementById("lightbox");
+
+      const lightboxImg = document.getElementById("lightbox-img");
+
+      const closeBtn = document.getElementById("close-btn");
+
+      // OPEN IMAGE
+
+      galleryImages.forEach((image) => {
+        image.addEventListener("click", () => {
+          lightbox.style.display = "flex";
+
+          lightboxImg.src = image.src;
+        });
+      });
+
+      // CLOSE BUTTON
+
+      closeBtn.addEventListener("click", () => {
+        lightbox.style.display = "none";
+      });
+
+      // CLOSE ON BACKGROUND CLICK
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          lightbox.style.display = "none";
+        }
+      });
+    </script>
+    <section class="pricing">
+      <div class="pricing-container">
+        <p class="section-small">VUOKRAUS</p>
+
+        <div class="gold-line"></div>
+
+        <h2>Vuokratiedot</h2>
+
+        <div class="pricing-card">
+          <div class="price-box">
+            <h3>1 490 € / kk</h3>
+
+            <p>Monikäyttöinen toimitila yritykselle</p>
+          </div>
+
+          <div class="pricing-info">
+            <div class="pricing-column">
+              <h4>Vuokraan sisältyy</h4>
+
+              <ul>
+                <li>Oma pysäköintialue</li>
+                <li>Keittiö</li>
+                <li>Suihku ja wc</li>
+                <li>Terassi ja parveke</li>
+                <li>Suuri autotalli</li>
+                <li>Internet-yhteys</li>
+              </ul>
+            </div>
+
+            <div class="pricing-column">
+              <h4>Lisäksi</h4>
+
+              <ul>
+                <li>Sähkö kulutuksen mukaan</li>
+                <li>Vesi kulutuksen mukaan</li>
+                <li>Vakuutukset</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Monikäyttöinen toimitila</h3>
+          <p>© 2026 Toimitila</p>
+        </div>
+
+        <div class="footer-center">
+          <p>Urhontie 16, 21270 Nousiainen</p>
+          <p>Viewing by appointment only</p>
+        </div>
+
+        <div class="footer-right">
+          <a href="mailto:svitlana.vent77@email.com" class="footer-button">
+            Ota yhteyttä
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
