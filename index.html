@@ -38,40 +38,40 @@
 
     <section class="about">
       <div class="about-container">
-        <p class="section-small">TIETOA KOHTEESTA</p>
+        <p class="section-small" id="about-small">TIETOA KOHTEESTA</p>
 
         <div class="gold-line"></div>
 
         <div class="about-main-text">
-          <p>
+          <p id="about-p1">
             Monikäyttöinen toimitila sijaitsee rauhallisessa ympäristössä
             Nousiaisissa osoitteessa
             <strong>Urhontie 16, 21270 Nousiainen</strong>.
           </p>
 
-          <p>
+          <p id="about-p2">
             Kohde tarjoaa laadukkaat ja monikäyttöiset tilat yrityskäyttöön.
             Tila soveltuu erinomaisesti toimistoksi, varastoksi, työtilaksi,
             showroomiksi tai yrityksen tukikohdaksi.
           </p>
 
-          <p>
+          <p id="about-p3">
             Kokonaisuus on noin <strong>153 m²</strong>, johon sisältyy suuri
             noin <strong>56 m²</strong> autotalli, oma pysäköintialue sekä
             toimivat sisätilat kahdessa kerroksessa.
           </p>
 
-          <p>
+          <p id="about-p4">
             Tilassa on keittiö, suihku, wc, lattialämmitys, takka, terassi sekä
             suuri parveke.
           </p>
 
-          <p>
+          <p id="about-p5">
             Rauhallinen sijainti luonnon ympäröimänä tarjoaa viihtyisän
             työympäristön sekä hyvät yhteydet Turun ja Raision suuntaan.
           </p>
 
-          <p>
+          <p id="about-p6">
             Kohde sopii erityisesti pienille ja keskisuurille yrityksille, jotka
             arvostavat toimivuutta, rauhallista sijaintia ja edustavaa
             ympäristöä.
@@ -144,6 +144,25 @@
         subtitle: "Laadukas toimitila lähellä Turkua",
 
         contact: "Ota yhteyttä",
+        aboutSmall: "TIETOA KOHTEESTA",
+
+        about1:
+          "Terabik House sijaitsee rauhallisessa ympäristössä Nousiaisissa osoitteessa Urhontie 16, 21270 Nousiainen.",
+
+        about2:
+          "Kohde tarjoaa laadukkaat ja monikäyttöiset tilat yrityskäyttöön. Tila soveltuu erinomaisesti toimistoksi, varastoksi, työtilaksi, showroomiksi tai yrityksen tukikohdaksi.",
+
+        about3:
+          "Kokonaisuus on noin 153 m², johon sisältyy suuri noin 56 m² autotalli, oma pysäköintialue sekä toimivat sisätilat kahdessa kerroksessa.",
+
+        about4:
+          "Tilassa on keittiö, suihku, wc, lattialämmitys, takka, terassi sekä suuri parveke.",
+
+        about5:
+          "Rauhallinen sijainti luonnon ympäröimänä tarjoaa viihtyisän työympäristön sekä hyvät yhteydet Turun ja Raision suuntaan.",
+
+        about6:
+          "Kohde sopii erityisesti pienille ja keskisuurille yrityksille, jotka arvostavat toimivuutta, rauhallista sijaintia ja edustavaa ympäristöä.",
       };
 
       // English Text
@@ -154,6 +173,25 @@
         subtitle: "Premium business premises near Turku",
 
         contact: "Contact",
+        aboutSmall: "PROPERTY INFORMATION",
+
+        about1:
+          "Terabik House is located in a peaceful area in Nousiainen at Urhontie 16, 21270 Nousiainen.",
+
+        about2:
+          "The property offers high-quality and multifunctional premises for business use. It is ideal as an office, storage space, workspace, showroom or company base.",
+
+        about3:
+          "The total area is approximately 153 m², including a large garage of approximately 56 m², private parking area and functional indoor spaces on two floors.",
+
+        about4:
+          "The premises include a kitchen, shower, toilet, floor heating, fireplace, terrace and large balcony.",
+
+        about5:
+          "The peaceful natural surroundings provide a comfortable working environment with good connections to Turku and Raisio.",
+
+        about6:
+          "The property is especially suitable for small and medium-sized businesses that value functionality, peaceful surroundings and a representative environment.",
       };
 
       // Buttons
@@ -170,6 +208,20 @@
 
       const contactText = document.getElementById("contact-text");
 
+      const aboutSmall = document.getElementById("about-small");
+
+      const aboutP1 = document.getElementById("about-p1");
+
+      const aboutP2 = document.getElementById("about-p2");
+
+      const aboutP3 = document.getElementById("about-p3");
+
+      const aboutP4 = document.getElementById("about-p4");
+
+      const aboutP5 = document.getElementById("about-p5");
+
+      const aboutP6 = document.getElementById("about-p6");
+
       // Finnish Language
 
       fiButton.addEventListener("click", () => {
@@ -178,6 +230,19 @@
         subtitle.textContent = finnish.subtitle;
 
         contactText.textContent = finnish.contact;
+        aboutSmall.textContent = finnish.aboutSmall;
+
+        aboutP1.textContent = finnish.about1;
+
+        aboutP2.textContent = finnish.about2;
+
+        aboutP3.textContent = finnish.about3;
+
+        aboutP4.textContent = finnish.about4;
+
+        aboutP5.textContent = finnish.about5;
+
+        aboutP6.textContent = finnish.about6;
       });
 
       // English Language
@@ -188,6 +253,19 @@
         subtitle.textContent = english.subtitle;
 
         contactText.textContent = english.contact;
+        aboutSmall.textContent = english.aboutSmall;
+
+        aboutP1.textContent = english.about1;
+
+        aboutP2.textContent = english.about2;
+
+        aboutP3.textContent = english.about3;
+
+        aboutP4.textContent = english.about4;
+
+        aboutP5.textContent = english.about5;
+
+        aboutP6.textContent = english.about6;
       });
       // LIGHTBOX
 
