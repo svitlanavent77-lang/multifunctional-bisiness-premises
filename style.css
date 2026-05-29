@@ -498,7 +498,11 @@ body {
     order: 3;
   }
 }
-
+@media (max-width: 768px) {
+  .footer {
+    padding: 45px 16px;
+  }
+}
 /* PRICING SECTION */
 
 .pricing {
@@ -751,4 +755,30 @@ body {
   .footer-center p {
     font-size: 16px;
   }
+}
+
+/* STOP HORIZONTAL SCROLL */
+
+* {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.icons-banner {
+  overflow: hidden;
+}
+
+.icons-banner img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.pricing-card,
+.about-main-text,
+.footer-container,
+.gallery-grid {
+  max-width: 100%;
 }
