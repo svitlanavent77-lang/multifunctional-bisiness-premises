@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -316,7 +321,7 @@ body {
 
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 
   gap: 25px;
 }
@@ -652,4 +657,98 @@ body {
   cursor: pointer;
 
   z-index: 10000;
+}
+
+/* MOBILE FIXES */
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 42px;
+    line-height: 1.15;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+
+  .contact-button {
+    padding: 13px 28px;
+    font-size: 16px;
+  }
+
+  .language-switch {
+    top: 18px;
+    right: 18px;
+  }
+
+  .language-switch button {
+    padding: 8px 14px;
+    margin-left: 6px;
+  }
+
+  .about {
+    padding: 80px 16px;
+  }
+
+  .section-small {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .about-main-text {
+    max-width: 100%;
+    padding: 28px 22px;
+  }
+
+  .about-main-text p {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .icons-banner img {
+    max-width: 100%;
+  }
+
+  .pricing {
+    padding: 80px 16px;
+  }
+
+  .pricing h2 {
+    font-size: 38px;
+  }
+
+  .pricing-card {
+    padding: 32px 24px;
+  }
+
+  .price-box h3 {
+    font-size: 40px;
+  }
+
+  .gallery {
+    padding: 40px 16px 80px;
+  }
+
+  .gallery h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .footer {
+    padding: 45px 20px;
+  }
+
+  .footer-left h3 {
+    font-size: 32px;
+  }
+
+  .footer-center p {
+    font-size: 16px;
+  }
 }
