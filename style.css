@@ -776,3 +776,28 @@ img {
     padding: 14px 26px;
   }
 }
+
+/* HEADER MOBILE FIX */
+
+@media (max-width: 768px) {
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+    line-height: 1.15;
+    letter-spacing: 1px;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .hero-content p {
+    font-size: 17px;
+    max-width: 100%;
+  }
+}
