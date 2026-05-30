@@ -855,3 +855,32 @@ img {
     max-width: 100%;
   }
 }
+
+/* MOBILE PRICING FIX */
+
+@media (max-width: 768px) {
+  .pricing-card {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+    overflow: visible;
+    padding: 28px 18px;
+  }
+
+  .pricing-info {
+    display: block;
+  }
+
+  .pricing-column {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .pricing-column li {
+    white-space: normal;
+    overflow-wrap: break-word;
+    line-height: 1.7;
+  }
+}
