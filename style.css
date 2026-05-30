@@ -652,16 +652,6 @@ body {
     font-size: 16px;
   }
 
-  .language-switch {
-    top: 18px;
-    right: 18px;
-  }
-
-  .language-switch button {
-    padding: 8px 14px;
-    margin-left: 6px;
-  }
-
   .about {
     padding: 80px 16px;
   }
