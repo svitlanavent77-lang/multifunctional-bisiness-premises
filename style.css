@@ -34,6 +34,60 @@ body {
   text-align: center;
 }
 
+.hero-label {
+  color: #d4b06a;
+  letter-spacing: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.hero-location {
+  font-size: 20px;
+  margin-bottom: 22px;
+  color: #eeeeee;
+}
+
+.hero-price {
+  display: inline-block;
+  margin-bottom: 35px;
+  padding: 16px 28px;
+  border: 1px solid rgba(212, 176, 106, 0.45);
+  border-radius: 50px;
+  color: #d4b06a;
+  font-size: 28px;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-price span {
+  display: block;
+  margin-top: 5px;
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .hero-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .hero-price {
+    font-size: 22px;
+    padding: 14px 22px;
+  }
+
+  .hero-price span {
+    font-size: 12px;
+  }
+
+  .hero-location {
+    font-size: 16px;
+  }
+}
+
 /* DARK OVERLAY */
 
 .overlay {
